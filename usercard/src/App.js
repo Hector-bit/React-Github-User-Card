@@ -35,7 +35,7 @@ class App extends React.Component {
     }
 
   render() {
-    console.log(this.state.person);
+    console.log(this.person);
     return (
       <div className='card'>
       <img src={this.state.person.avatar_url}/>
@@ -51,7 +51,8 @@ class App extends React.Component {
           <p>Bio: {this.state.person.bio}</p>
       </div>
   </div>
-    )}
+    )
+};
 }
 
 export default App;
